@@ -1,0 +1,14 @@
+*, :after, :before{
+	box-sizing: border-box;
+}
+.img {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.popup-open-body {
+	overflow: hidden;
+}
+::-webkit-scrollbar {
+  width: 0;
+}
