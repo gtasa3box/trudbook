@@ -1,0 +1,44 @@
+.footer {
+	width: 100%;
+	height: 97px;
+	background-color: #12273C;
+	color: white;
+	font-size: 14px;
+	line-height: 17px;
+	&__wrapper {
+		height: 100%;
+		padding: 0 140px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__requisites p:not(:first-child) {
+		margin-top: 7px;
+	}
+	&__adress {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	&__politic {
+		font-weight: 600;
+		font-size: 14px;
+		line-height: 17px;
+	}
+	&__soc {
+
+	}
+}
+.soc {
+	display: flex;
+	justify-content: space-between;
+	a {
+		display: block;
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 30px;
+		height: 30px;
+	}
+	&__telegram {
+		background-image: url(static/telegram.png);
+	}
+}

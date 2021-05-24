@@ -1,0 +1,38 @@
+.samples {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__wrapper {
+		padding-top: 65px;
+		display: flex;
+		justify-content: space-between;
+		width: 52%;
+		padding-bottom: 94px;
+	}
+	&__card {
+		width: 40%;
+		&-title {
+			font-size: 22px;
+			line-height: 27px;
+			margin-bottom: 17px;
+			span {
+				font-weight: bold;
+			}
+		}
+		img {
+			margin-bottom: 4px;
+		}
+		&-info {
+			color: #414141;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 22px;
+			span {
+				font-weight: bold;
+			}
+			p {
+				margin-top: 20px;
+			}
+		}
+	}
+}

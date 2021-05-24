@@ -1,0 +1,85 @@
+.intro {
+	background: linear-gradient(283.31deg, #F0F0F0 13.22%, rgba(223, 223, 223, 0) 75.68%);
+	display: flex;
+	justify-content: space-between;
+	padding: 63px 14.69% 59px 14.9%;
+	&__form {
+		padding: 126px 0 143px;
+	}
+	&__jpg {
+		width: 502px;
+		height: 502px;
+	}
+	&__title {
+		width: 570px;
+		font-weight: bold;
+		font-size: 29px;
+		line-height: 37px;
+		text-transform: uppercase;
+	}
+	&__text {
+		width: 607px;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 35px;
+		color: #525252;
+		margin: 10px 0 40px;
+	}
+	&__buttons {
+		display: flex;
+	}
+	&__button {
+		width: 273px;
+		margin-right: 33.88px;
+	}
+}
+.button_primary {
+	display: block;
+	color: white;
+	background: linear-gradient(94.15deg, #FA6F5D 27.51%, #DF523F 100%);
+	box-shadow: 0px 0px 15px 5px rgba(229, 89, 70, 0.2);
+}
+.button_second {
+	color: #414141;
+	border: 1px solid #414141;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 15px 5px rgba(26, 54, 82, 0.06);
+	
+}
+.button{
+	display: block;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 22px;
+	text-transform: uppercase;
+	padding: 19px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	&_tringle {
+		&:after {
+			content: '';
+			position: absolute;
+			background-image: url(static/button_tringle.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			width: 9.27px;
+			height: 9px;
+			top: -4px;
+			right: -4px;
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			background-image: url(static/button_tringle.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+			transform: rotate(180deg);
+			width: 9.27px;
+			height: 9px;
+			bottom: -4px;
+			left: -4px;
+		}
+	}
+}

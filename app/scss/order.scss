@@ -1,0 +1,12 @@
+.order {
+	padding-bottom: 171px;
+	&__buttons {
+		display: flex;
+		justify-content: center;
+		margin-top: 54px;
+	}
+	&__button {
+		width: 273px;
+		margin-right: 46px;
+	}
+}

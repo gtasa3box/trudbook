@@ -1,0 +1,144 @@
+.catalog {
+	padding: 0 7.3%;
+	&__wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	&__info {
+		&-title {
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 24px;
+			text-transform: uppercase;
+		}
+		&-properties {
+			color: #414141;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 22px;
+			display: flex;
+			margin-top: 13px;
+			margin-bottom: 40px;
+			p {
+				margin-right: 24px;
+			}
+			span {
+				font-weight: bold;
+			}
+		}
+	}
+	&__card {
+		width: 310px;
+		min-width: 22%;
+		background-color: #F6F7F8;
+		margin-bottom: 88px;
+		.button_primary {
+			margin-bottom: 19px;
+		}
+		.button_second {
+			background-color: #E7E7E7;
+			border: 1px solid rgba(65, 65, 65, 0.25);
+		}
+		&-title {
+			padding: 0 30px;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 22px;
+		}
+		&-properties {
+			width: 100%;
+			padding: 18px 30px;
+			font-weight: normal;
+			font-size: 13px;
+			line-height: 16px;
+			color: #414141;
+			margin-bottom: 11px;
+			p {
+				display: flex;
+				justify-content: space-between;
+				margin-bottom: 12px;
+				&:before {
+					content: '';
+					border-bottom: 1px solid #ccc;
+					flex-grow: 1;
+					order: 2;
+					margin: 0 8px 3px;
+				}
+				span {
+					font-weight: bold;
+					order: 3;
+				}
+				.price_green {
+					color: #2fe02f;
+				}
+			}
+		}
+		&-img {
+			position: relative;
+			width: 100%;
+			box-sizing: border-box;
+			border: 30px solid #F6F7F8;
+			background-color: white;
+			height: 310px;
+			&:before {
+				content: '';
+				position: absolute;
+				background-size: contain;
+				background-repeat: no-repeat;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+			&_16 {
+				&:before {
+					background-image: url(static/safe16.png);
+					width: 279px;
+					height: 279px;
+				}
+			} 
+			&_14 {
+				&:before {
+					background-image: url(static/safe14.png);
+					width: 279px;
+					height: 279px;
+				}
+			}
+			&_12 {
+				&:before {
+					background-image: url(static/safe12.png);
+					width: 279px;
+					height: 279px;
+				}
+			}
+			&_10 {
+				&:before {
+					background-image: url(static/safe10.png);
+					width: 279px;
+					height: 279px;
+				}
+			}
+			&_8 {
+				&:before {
+					background-image: url(static/safe8.png);
+					width: 279px;
+					height: 279px;
+				}
+			}
+			&_6 {
+				&:before {
+					background-image: url(static/safe6.png);
+					width: 279px;
+					height: 279px;
+				}
+			}
+			&_4 {
+				&:before {
+					background-image: url(static/safe4.png);
+					width: 279px;
+					height: 279px;
+				}
+			}
+		}
+	}
+}

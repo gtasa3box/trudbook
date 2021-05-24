@@ -1,0 +1,132 @@
+
+.title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+	line-height: 33px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.info-title {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 19px;
+	line-height: 23px;
+	color: #5B5B5B;
+	text-align: center;
+	position: relative;
+	margin-top: 25px;
+	max-width: 475px;
+	left:50%;
+	transform: translate(-50%);
+	&:before {
+		content: '';
+		position: absolute;
+		height: 2px;
+		width: 146px;
+		background: rgba(196, 196, 196, 0.43);
+		top: -9px;
+		left:50%;
+		transform: translate(-50%);
+	}
+	span {
+		font-weight: bold;
+	}
+}
+.benefits {
+	padding: 80px 0 20px;
+	&__title {
+
+	}
+	&__slider {
+		padding-top: 27px;
+		display: flex;
+		justify-content: center;
+	}
+}
+.slider {
+	width: 85%;
+	display: flex;
+	flex-basis: 511px;
+	padding: 60px 0;
+}
+
+.card {
+	width: 511px;
+	height: 285px;
+	position: relative;
+	&:hover {
+		&:before {
+			left: 43%;
+			transform: scale(1.1,1.1);
+			opacity: 1;
+		}
+	}
+	&:before {
+		content: '';
+		position: absolute;
+		background-image: url(static/lupa.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		top: 56px;
+		left: 50%;
+		transform: translate(-50%);
+		width: 71px;
+		height: 72.27px;
+		opacity: 0.8;
+		transition: 0.5s ease;
+		pointer-events: none;
+	}
+	&__info {
+		width: 100%;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: linear-gradient(179.09deg, rgba(43, 43, 43, 0.2077) 0.78%, rgba(36, 36, 36, 0.350005) 22.32%, rgba(21, 21, 21, 0.67) 99.21%);
+		color: #FFFFFF;
+		text-shadow: 1px 2px 1px rgba(0, 0, 0, 0.45);
+		height: 122px;
+		padding: 14px 29px;
+		pointer-events: none;
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 7px;
+	}
+	&__text {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 21px;
+		color: #FDFDFD;
+	}
+}
+.slick-prev:before {
+	content: '';
+	display: block;
+	background-image: url(static/arrow.png);
+	background-position: center ;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 67px;
+	width: 33px;
+	position: absolute;
+	top: -20px;
+	left: -58px;
+}
+
+.slick-next:before {
+	content: '';
+	display: block;
+	background-image: url(static/arrow.png);
+	background-position: center ;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotate(180deg);
+	height: 67px;
+	width: 33px;
+	position: absolute;
+	top: -20px;
+	left: 38px;
+}
