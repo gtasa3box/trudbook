@@ -8,13 +8,39 @@
 		justify-content: space-between;
 		width: 52%;
 		padding-bottom: 94px;
+		@media screen and (max-width: 860px) {
+			width: 80%;
+		}
+		@media screen and (max-width: 740px) {
+			flex-direction: column;
+			align-items: center;
+			padding-top: 0;
+			padding-bottom: 65px;
+		}
 	}
 	&__card {
 		width: 40%;
+		@media screen and (max-width: 740px) {
+			width: 80%;
+			margin-top: 65px;
+		}
+		@media screen and (max-width: 740px) {
+			width: 100%;
+		}
 		&-title {
 			font-size: 22px;
 			line-height: 27px;
 			margin-bottom: 17px;
+			min-height: 80px;
+			@media screen and (max-width: 1300px) {
+				font-size: 15px;
+				line-height: 20px;
+				min-height: 10px;
+			}
+			@media screen and (max-width: 740px) {
+				font-size: 22px;
+				line-height: 27px;
+			}
 			span {
 				font-weight: bold;
 			}
@@ -27,11 +53,22 @@
 			font-weight: normal;
 			font-size: 18px;
 			line-height: 22px;
+			@media screen and (max-width: 1300px) {
+				font-size: 11px;
+				line-height: 15px;
+			}
+			@media screen and (max-width: 740px) {
+				font-size: 18px;
+				line-height: 22px;
+			}
 			span {
 				font-weight: bold;
 			}
 			p {
 				margin-top: 20px;
+				@media screen and (max-width: 1400px) {
+					margin-top: 10px;
+				}
 			}
 		}
 	}

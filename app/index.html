@@ -23,7 +23,7 @@
   "@context": "http://schema.org",
   "@type": "WebSite",
   "name": "Сейфы для трудовых книжек от производителя - Сейфы Эталон",
-  "url": "https://safe-etalon.ru"
+  "url": "https://trud.safe-etalon.ru/"
 }
 </script>
 <!-- Stylesheets -->
@@ -36,7 +36,10 @@
 <body>
 	<!--Header-->
 	<header class="header" id="header">
-		<nav class="header__nav nav">
+		<div id="burger" class="header__burger">
+			<a id="burgerlink" class="burger"></a>
+		</div>
+		<nav id="nav" class="header__nav nav">
 			<div class="navLeft nav__block">
 				<a href="" class="nav__elem nav__elem_marginright nav__elem_marginleft">Выгоды</a>
 				<a href="" class="nav__elem">Сейфы</a>
@@ -57,7 +60,7 @@
 		</div>
 	</header>
 
-	<!--Main-->
+	<!--Main
 	<main class="main">
 		<!--Intro Block -->
 		<section class="intro">
@@ -65,8 +68,14 @@
 				<h2 class="intro__title">Наведите порядок в хранении всех трудовых книжек</h2>
 				<h1 class="intro__text">Сейфы Досье и сейфы Учёт для трудовых книжек. Заказывайте!</h1>
 				<div class="intro__buttons">
-					<a href="" class="intro__button button_primary button_tringle button">ЗАКАЗАТЬ СЕЙФ</a>
-					<a href="" class="intro__button button_second button">Получить ТЗ на сейф</a>
+					<a href="" class="intro__button button_primary button_tringle button b1c-good b1c">
+						<div class="b1c-name">сейф</div>
+						<span class="b1c">ЗАКАЗАТЬ СЕЙФ</span>
+					</a>
+					<a href="" class="intro__button button_second button b1c-good b1c">
+						<div class="b1c-name">получить ТЗ</div>
+						<span class="b1c">Получить ТЗ на сейф</span>
+					</a>
 				</div>
 			</div>
 			<div class="intro__img">
@@ -120,7 +129,7 @@
 				</div>
 			</div>
 		</section>
-		<!--samples production-->
+		<!--samples production -->
 		<section class="samples">
 			<div class="samples__title">
 				<div class="title">ВИДЫ ПРОДУКЦИИ</div>
@@ -165,102 +174,157 @@
 				</div>
 			</div>
 			<div class="catalog__wrapper">
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_16"></div>
-					<div class="catalog__card-title">Сейф Досье 16</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>800 - 1120 шт</span></p>
-						<p>Кол-во ящиков: <span>16 шт</span></p>
-						<p>Высота: <span>1480 мм</span></p>
-						<p>Масса: <span>254 кг</span></p>
-						<p>Цена: <span class="price_green">228 320 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_16"></div>
+						<div class="catalog__card-title">Сейф Досье 16</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>800 - 1120 шт</span></p>
+							<p>Кол-во ящиков: <span>16 шт</span></p>
+							<p>Высота: <span>1480 мм</span></p>
+							<p>Масса: <span>254 кг</span></p>
+							<p>Цена: <span class="price_green">228 320 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Досье 16</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Досье 16</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_14"></div>
-					<div class="catalog__card-title">Сейф Досье 14</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>700 - 980 шт</span></p>
-						<p>Кол-во ящиков: <span>14 шт</span></p>
-						<p>Высота: <span>1310 мм</span></p>
-						<p>Масса: <span>227 кг</span></p>
-						<p>Цена: <span class="price_green">203 376 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_14"></div>
+						<div class="catalog__card-title">Сейф Досье 14</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>700 - 980 шт</span></p>
+							<p>Кол-во ящиков: <span>14 шт</span></p>
+							<p>Высота: <span>1310 мм</span></p>
+							<p>Масса: <span>227 кг</span></p>
+							<p>Цена: <span class="price_green">203 376 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Досье 14</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Досье 14</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
+				</div>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_12"></div>
+						<div class="catalog__card-title">Сейф Досье 12</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>500 - 830 шт</span></p>
+							<p>Кол-во ящиков: <span>12 шт</span></p>
+							<p>Высота: <span>1140 мм</span></p>
+							<p>Масса: <span>199 кг</span></p>
+							<p>Цена: <span class="price_green">177 700 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Досье 12</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Досье 12</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
+					</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_12"></div>
-					<div class="catalog__card-title">Сейф Досье 12</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>500 - 830 шт</span></p>
-						<p>Кол-во ящиков: <span>12 шт</span></p>
-						<p>Высота: <span>1140 мм</span></p>
-						<p>Масса: <span>199 кг</span></p>
-						<p>Цена: <span class="price_green">177 700 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_10"></div>
+						<div class="catalog__card-title">Сейф Досье 10</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>400 - 690 шт</span></p>
+							<p>Кол-во ящиков: <span>10 шт</span></p>
+							<p>Высота: <span>970 мм</span></p>
+							<p>Масса: <span>172 кг</span></p>
+							<p>Цена: <span class="price_green">153 080 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Досье 10</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Досье 10</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_10"></div>
-					<div class="catalog__card-title">Сейф Досье 10</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>400 - 690 шт</span></p>
-						<p>Кол-во ящиков: <span>10 шт</span></p>
-						<p>Высота: <span>970 мм</span></p>
-						<p>Масса: <span>172 кг</span></p>
-						<p>Цена: <span class="price_green">153 080 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_8"></div>
+						<div class="catalog__card-title">Сейф Досье 8</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>200 - 540 шт</span></p>
+							<p>Кол-во ящиков: <span>8 шт</span></p>
+							<p>Высота: <span>800 мм</span></p>
+							<p>Масса: <span>144 кг</span></p>
+							<p>Цена: <span class="price_green">129 450 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Досье 8</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Досье 8</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_8"></div>
-					<div class="catalog__card-title">Сейф Досье 8</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>200 - 540 шт</span></p>
-						<p>Кол-во ящиков: <span>8 шт</span></p>
-						<p>Высота: <span>800 мм</span></p>
-						<p>Масса: <span>144 кг</span></p>
-						<p>Цена: <span class="price_green">129 450 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_6"></div>
+						<div class="catalog__card-title">Сейф Досье 6</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>100 - 390 шт</span></p>
+							<p>Кол-во ящиков: <span>6 шт</span></p>
+							<p>Высота: <span>630 мм</span></p>
+							<p>Масса: <span>117 кг</span></p>
+							<p>Цена: <span class="price_green">106 220 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Досье 6</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Досье 6</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_6"></div>
-					<div class="catalog__card-title">Сейф Досье 6</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>100 - 390 шт</span></p>
-						<p>Кол-во ящиков: <span>6 шт</span></p>
-						<p>Высота: <span>630 мм</span></p>
-						<p>Масса: <span>117 кг</span></p>
-						<p>Цена: <span class="price_green">106 220 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_4"></div>
+						<div class="catalog__card-title">Сейф Досье 4</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>50 - 250 шт</span></p>
+							<p>Кол-во ящиков: <span>4 шт</span></p>
+							<p>Высота: <span>460 мм</span></p>
+							<p>Масса: <span>90 кг</span></p>
+							<p>Цена: <span class="price_green">82 500 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Досье 4</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Досье 4</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
-				</div>
-
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_4"></div>
-					<div class="catalog__card-title">Сейф Досье 4</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>50 - 250 шт</span></p>
-						<p>Кол-во ящиков: <span>4 шт</span></p>
-						<p>Высота: <span>460 мм</span></p>
-						<p>Масса: <span>90 кг</span></p>
-						<p>Цена: <span class="price_green">82 500 руб.</span></p>
-					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 			</div>
 
@@ -272,107 +336,163 @@
 				</div>
 			</div>
 			<div class="catalog__wrapper">
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_16"></div>
-					<div class="catalog__card-title">Сейф Учёт 16</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>800 - 1120 шт</span></p>
-						<p>Кол-во ящиков: <span>16 шт</span></p>
-						<p>Высота: <span>1430 мм</span></p>
-						<p>Масса: <span>171 кг</span></p>
-						<p>Цена: <span class="price_green">167 400 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_16"></div>
+						<div class="catalog__card-title">Сейф Учёт 16</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>800 - 1120 шт</span></p>
+							<p>Кол-во ящиков: <span>16 шт</span></p>
+							<p>Высота: <span>1430 мм</span></p>
+							<p>Масса: <span>171 кг</span></p>
+							<p>Цена: <span class="price_green">167 400 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Учёт 16</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Учёт 16</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_14"></div>
-					<div class="catalog__card-title">Сейф Учёт 14</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>700 - 980 шт</span></p>
-						<p>Кол-во ящиков: <span>14 шт</span></p>
-						<p>Высота: <span>1260 мм</span></p>
-						<p>Масса: <span>152 кг</span></p>
-						<p>Цена: <span class="price_green">144 300 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_14"></div>
+						<div class="catalog__card-title">Сейф Учёт 14</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>700 - 980 шт</span></p>
+							<p>Кол-во ящиков: <span>14 шт</span></p>
+							<p>Высота: <span>1260 мм</span></p>
+							<p>Масса: <span>152 кг</span></p>
+							<p>Цена: <span class="price_green">144 300 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Учёт 14</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Учёт 14</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_12"></div>
-					<div class="catalog__card-title">Сейф Учёт 12</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>500 - 830 шт</span></p>
-						<p>Кол-во ящиков: <span>12 шт</span></p>
-						<p>Высота: <span>1090 мм</span></p>
-						<p>Масса: <span>133 кг</span></p>
-						<p>Цена: <span class="price_green">122 310 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_12"></div>
+						<div class="catalog__card-title">Сейф Учёт 12</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>500 - 830 шт</span></p>
+							<p>Кол-во ящиков: <span>12 шт</span></p>
+							<p>Высота: <span>1090 мм</span></p>
+							<p>Масса: <span>133 кг</span></p>
+							<p>Цена: <span class="price_green">122 310 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Учёт 12</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Учёт 12</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_10"></div>
-					<div class="catalog__card-title">Сейф Учёт 10</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>400 - 690 шт</span></p>
-						<p>Кол-во ящиков: <span>10 шт</span></p>
-						<p>Высота: <span>920 мм</span></p>
-						<p>Масса: <span>110 кг</span></p>
-						<p>Цена: <span class="price_green">97 900 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_10"></div>
+						<div class="catalog__card-title">Сейф Учёт 10</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>400 - 690 шт</span></p>
+							<p>Кол-во ящиков: <span>10 шт</span></p>
+							<p>Высота: <span>920 мм</span></p>
+							<p>Масса: <span>110 кг</span></p>
+							<p>Цена: <span class="price_green">97 900 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Учёт 10</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Учёт 10</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_8"></div>
-					<div class="catalog__card-title">Сейф Учёт 8</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>200 - 540 шт</span></p>
-						<p>Кол-во ящиков: <span>8 шт</span></p>
-						<p>Высота: <span>750 мм</span></p>
-						<p>Масса: <span>95 кг</span></p>
-						<p>Цена: <span class="price_green">90 180 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_8"></div>
+						<div class="catalog__card-title">Сейф Учёт 8</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>200 - 540 шт</span></p>
+							<p>Кол-во ящиков: <span>8 шт</span></p>
+							<p>Высота: <span>750 мм</span></p>
+							<p>Масса: <span>95 кг</span></p>
+							<p>Цена: <span class="price_green">90 180 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Учёт 8</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Учёт 8</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_6"></div>
-					<div class="catalog__card-title">Сейф Учёт 6</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>100 - 390 шт</span></p>
-						<p>Кол-во ящиков: <span>6 шт</span></p>
-						<p>Высота: <span>580 мм</span></p>
-						<p>Масса: <span>76 кг</span></p>
-						<p>Цена: <span class="price_green">76 600 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_6"></div>
+						<div class="catalog__card-title">Сейф Учёт 6</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>100 - 390 шт</span></p>
+							<p>Кол-во ящиков: <span>6 шт</span></p>
+							<p>Высота: <span>580 мм</span></p>
+							<p>Масса: <span>76 кг</span></p>
+							<p>Цена: <span class="price_green">76 600 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Учёт 6</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Учёт 6</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 
-				<div class="catalog__card">
-					<div class="catalog__card-img catalog__card-img_4"></div>
-					<div class="catalog__card-title">Сейф Учёт 4</div>
-					<div class="catalog__card-properties">
-						<p>Кол-во книжек: <span>50 - 250 шт</span></p>
-						<p>Кол-во ящиков: <span>4 шт</span></p>
-						<p>Высота: <span>410 мм</span></p>
-						<p>Масса: <span>57 кг</span></p>
-						<p>Цена: <span class="price_green">60 890 руб.</span></p>
+				<div class="catalog__card-wrapper">
+					<div class="catalog__card">
+						<div class="catalog__card-img catalog__card-img_4"></div>
+						<div class="catalog__card-title">Сейф Учёт 4</div>
+						<div class="catalog__card-properties">
+							<p>Кол-во книжек: <span>50 - 250 шт</span></p>
+							<p>Кол-во ящиков: <span>4 шт</span></p>
+							<p>Высота: <span>410 мм</span></p>
+							<p>Масса: <span>57 кг</span></p>
+							<p>Цена: <span class="price_green">60 890 руб.</span></p>
+						</div>
+						<div class="button button_primary b1c-good b1c">
+							<div class="b1c-name">Сейф Учёт 4</div>
+							<span class="b1c">Заказать</span>
+						</div>
+						<div class="button button_second b1c-good b1c">
+							<div class="b1c-name">ТЗ Учёт 4</div>
+							<span class="b1c">Получить ТЗ на сейф</span>
+						</div>
 					</div>
-					<div class="button button_primary">Заказать</div>
-					<div class="button button_second">Получить ТЗ на сейф</div>
 				</div>
 			</div>
 		</section>
 
-		<!--Thanksgiving mail-->
+		<!--Thanksgiving mail -->
 		<section class="thank-mail">
 			<div class="thank-mail__title">
 				<div class="title">БЛАГОДАРСТВЕННЫЕ ПИСЬМА</div>
@@ -385,7 +505,7 @@
 			</div>
 		</section>
 
-		<!--Order-->
+		<!--Order
 		<section class="order">
 			<div class="order__title">
 				<div class="title">Заказать сейф</div>
@@ -396,7 +516,7 @@
 				<a href="" class="order__button button_second button">Получить ТЗ на сейф</a>
 			</div>
 		</section>
-		<!--Map-->
+		<!--Map
 		<section class="map">
 			<div class="map__wrapper">
 				<img src="static/map.png" alt="">
@@ -416,7 +536,7 @@
 				<p>Родионова, д. 171С, оф. 309</p>
 			</div>
 			<div class="footer__politic">
-				<p>Политика конфиденциальности</p>
+				<a href="" target="blank">Политика конфиденциальности</a>
 			</div>
 			<div class="footer__soc soc">
 				<a class="soc__telegram" href=""></a>
@@ -428,6 +548,7 @@
 			</div>
 		</div>
 	</footer>
+-->
 <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>

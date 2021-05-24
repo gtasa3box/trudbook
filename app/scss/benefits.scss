@@ -6,6 +6,10 @@
 	line-height: 33px;
 	text-align: center;
 	text-transform: uppercase;
+	@media screen and (max-width: 500px) {
+		font-size: 20px;
+		line-height: 25px; 
+	}
 }
 .info-title {
 	font-style: normal;
@@ -19,6 +23,11 @@
 	max-width: 475px;
 	left:50%;
 	transform: translate(-50%);
+	@media screen and (max-width: 500px) {
+		font-size: 11px;
+		line-height: 17px;
+		margin-top: 15px;
+	}
 	&:before {
 		content: '';
 		position: absolute;
@@ -28,6 +37,9 @@
 		top: -9px;
 		left:50%;
 		transform: translate(-50%);
+		@media screen and (max-width: 500px) {
+			top: -6px;
+		}
 	}
 	span {
 		font-weight: bold;
@@ -35,6 +47,10 @@
 }
 .benefits {
 	padding: 80px 0 20px;
+	@media screen and (max-width: 500px) {
+		padding: 40px 0 10px;
+	}
+
 	&__title {
 
 	}
@@ -42,6 +58,9 @@
 		padding-top: 27px;
 		display: flex;
 		justify-content: center;
+		@media screen and (max-width: 1200px) {
+			padding-top: 10px;
+		}
 	}
 }
 .slider {
@@ -49,16 +68,30 @@
 	display: flex;
 	flex-basis: 511px;
 	padding: 60px 0;
+	@media screen and (max-width: 880px) {
+		width: 88%;
+		padding-top: 30px;
+	}
+	@media screen and (max-width: 780px) {
+		width: 100%;
+	}
+	@media screen and (max-width: 880px) {
+		width: 80%;
+	}
 }
 
 .card {
 	width: 511px;
 	height: 285px;
+	@media screen and (max-width: 1600px) {
+		width: 400px;
+		height: 223px;
+	}
+	
 	position: relative;
 	&:hover {
 		&:before {
-			left: 43%;
-			transform: scale(1.1,1.1);
+			transform: translate(-50%) scale(1.1);
 			opacity: 1;
 		}
 	}
@@ -76,6 +109,7 @@
 		opacity: 0.8;
 		transition: 0.5s ease;
 		pointer-events: none;
+		opacity: 0;
 	}
 	&__info {
 		width: 100%;
@@ -88,18 +122,29 @@
 		height: 122px;
 		padding: 14px 29px;
 		pointer-events: none;
+		@media screen and (max-width: 1600px) {
+			height: 90px;
+		}
 	}
 	&__title {
 		font-weight: bold;
 		font-size: 24px;
 		line-height: 29px;
 		margin-bottom: 7px;
+		@media screen and (max-width: 1600px) {
+			font-size: 18px;
+			line-height: 23px;
+		}
 	}
 	&__text {
 		font-weight: 600;
 		font-size: 16px;
 		line-height: 21px;
 		color: #FDFDFD;
+		@media screen and (max-width: 1600px) {
+			font-size: 10px;
+			line-height: 15px;
+		}
 	}
 }
 .slick-prev:before {
@@ -114,6 +159,15 @@
 	position: absolute;
 	top: -20px;
 	left: -58px;
+	@media screen and (max-width: 1200px) {
+		left: -38px;
+	}
+	@media screen and (max-width: 880px) {
+		left: -20px;
+	}
+	@media screen and (max-width: 780px) {
+		display: none;
+	}
 }
 
 .slick-next:before {
@@ -129,4 +183,13 @@
 	position: absolute;
 	top: -20px;
 	left: 38px;
+	@media screen and (max-width: 1200px) {
+		left: 18px;
+	}
+	@media screen and (max-width: 880px) {
+		left: 0;
+	}
+	@media screen and (max-width: 780px) {
+		display: none;
+	}
 }
