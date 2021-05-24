@@ -1,9 +1,11 @@
 .catalog {
 	padding: 0 7.3%;
+	width: 100%;
 	@media screen and (max-width: 380px) {
 		padding: 0 2%;
 	}
 	&__wrapper {
+		width: 100%;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: flex-start;
@@ -67,6 +69,8 @@
 				width: 100%;
 			}
 			@media screen and (max-width: 380px) {
+				width: 100%;
+				min-width: 310px;
 				
 			}
 		}

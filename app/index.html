@@ -33,7 +33,7 @@
 <link rel="shortcut icon" href="static/favicon.ico" type="image/x-icon">
 <title>Сейфы для трудовых книжек от производителя. Сейфы Эталон</title>
 </head>
-<body>
+<body class="matrix">
 	<!--Header-->
 	<header class="header" id="header">
 		<div id="burger" class="header__burger">
@@ -41,12 +41,12 @@
 		</div>
 		<nav id="nav" class="header__nav nav">
 			<div class="navLeft nav__block">
-				<a href="" class="nav__elem nav__elem_marginright nav__elem_marginleft">Выгоды</a>
-				<a href="" class="nav__elem">Сейфы</a>
+				<a href="#benefits" class="nav__elem nav__elem_marginright nav__elem_marginleft">Выгоды</a>
+				<a href="#safe" class="nav__elem">Сейфы</a>
 			</div>
 			<div class="navRight nav__block">
-				<a href="" class="nav__elem nav__elem_marginright">Доставка</a>
-				<a href="" class="nav__elem">Контакты</a>
+				<a href="#map" class="nav__elem nav__elem_marginright">Доставка</a>
+				<a href="#footer" class="nav__elem">Контакты</a>
 			</div>
 		</nav>
 		<div class="header__logo">
@@ -83,7 +83,7 @@
 			</div>
 		</section>
 		<!--Benefits -->
-		<section class="benefits">
+		<section id="benefits" class="benefits">
 			<div class="benefits__title">
 				<div class="title">Преимущества</div>
 				<div class="info-title">Лучшие сейфы на любой вкус</div>
@@ -161,7 +161,7 @@
 			</div>
 		</section>
 		<!--Catalog-->
-		<section class="catalog">
+		<section id="safe" class="catalog">
 			<div class="catalog__title">
 				<div class="title">Каталог</div>
 				<div class="info-title"></div>
@@ -517,14 +517,14 @@
 			</div>
 		</section>
 		<!--Map -->
-		<section class="map">
+		<section id="map" class="map">
 			<div class="map__wrapper">
 				<img src="static/map.png" alt="">
 			</div>
 		</section>
 	</main>
 
-	<footer class="footer">
+	<footer id="footer" class="footer">
 		<div class="footer__wrapper">
 			<div class="footer__requisites">
 				<p>ИНН 5260467572</p>
@@ -548,6 +548,9 @@
 			</div>
 		</div>
 	</footer>
+	<!-- begin Back to Top button -->
+	<a class="back_to_top" title="Наверх">&uarr;</a>
+	<!-- end Back to Top button -->
 
 <script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>

@@ -158,3 +158,34 @@
 		background-image: url(static/whatsapp.png);
 	}
 }
+
+//Up button
+
+/* begin begin Back to Top button  */
+
+.back_to_top {
+	position: fixed;
+	bottom: 80px;
+	right: 40px;
+	z-index: 10;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	line-height: 38px;
+	background: #214568;
+	color: white;
+	cursor: pointer;
+	border-radius: 2px;
+	display: none;
+}
+
+.back_to_top:hover {
+	background: #3285d6;
+}
+
+.back_to_top-show {
+	display: block;
+}
+
+
+/* end begin Back to Top button  */

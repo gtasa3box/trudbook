@@ -15,8 +15,13 @@
 	}
 	&__button {
 		width: 273px;
-		margin-right: 46px;
+		&:not(:last-child) {
+			margin-right: 46px;
+		}
 		@media screen and (max-width: 670px) {
+			&:not(:last-child) {
+				margin-right: 0;
+			}
 			margin: 20px 0 0;
 		}
 	}
