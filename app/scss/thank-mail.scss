@@ -2,17 +2,33 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
 	&__wrapper {
 		width: 48%;
 		display: flex;
 		justify-content: space-between;
 		padding-top: 64px;
 		padding-bottom: 94px;
+		@media screen and (max-width: 1200px) {
+			width: 80%;
+		}
+		@media screen and (max-width: 660px) {
+			width: 97%;
+			padding-bottom: 50px;
+		}
 	}
 	&__img {
 		width: 173px;
 		height: 252px;
 		position: relative;
+		@media screen and (max-width: 660px) {
+			width: 100px;
+			height: 169px;
+		}
+		@media screen and (max-width: 340px) {
+			width: 80px;
+			height: 149px;
+		}
 		&:hover {
 			&:before {
 				opacity: 0.7;
@@ -32,6 +48,10 @@
 			opacity: 0;
 			transition: 0.5s ease;
 			pointer-events: none;
+			@media screen and (max-width: 660px) {
+				width: 30px;
+				height: 30px;
+			}
 		}
 	}
 }

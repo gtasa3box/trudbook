@@ -9,7 +9,7 @@
 		justify-content: flex-start;
 		margin: 0 -3%;
 		@media screen and (max-width: 380px) {
-			margin: 0 -2%;
+			margin: 0 -3%;
 		}
 	}
 	&__info {
@@ -159,7 +159,6 @@
 			@media screen and (max-width: 550px) {
 				width: 30%;
 				height: 150px;
-				
 				transform: translate(2%,50%);
 			}
 			&:before {
