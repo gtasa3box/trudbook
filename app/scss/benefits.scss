@@ -125,6 +125,12 @@
 		@media screen and (max-width: 1600px) {
 			height: 90px;
 		}
+		@media screen and (max-width: 600px) {
+			padding: 14px 14px;
+		}
+		@media screen and (max-width: 350px) {
+			padding: 14px 10px;
+		}
 	}
 	&__title {
 		font-weight: bold;

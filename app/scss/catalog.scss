@@ -2,7 +2,7 @@
 	padding: 0 7.3%;
 	width: 100%;
 	@media screen and (max-width: 380px) {
-		padding: 0 2%;
+		padding: 0 3%;
 	}
 	&__wrapper {
 		width: 100%;
@@ -10,13 +10,17 @@
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		margin: 0 -3%;
+		@media screen and (max-width: 550px) {
+			margin: 0;
+		}
 		@media screen and (max-width: 380px) {
-			margin: 0 -3%;
+			margin: 0;
 		}
 	}
 	&__info {
 		@media screen and (max-width: 550px) {
 			margin-top: 50px;
+			text-align: center;
 		}
 		&-title {
 			font-weight: bold;
@@ -68,9 +72,12 @@
 			@media screen and (max-width: 775px) {
 				width: 100%;
 			}
+			@media screen and (max-width: 550px){
+				padding: 0;
+			}
 			@media screen and (max-width: 380px) {
 				width: 100%;
-				min-width: 310px;
+				min-width: 300px;
 				
 			}
 		}
