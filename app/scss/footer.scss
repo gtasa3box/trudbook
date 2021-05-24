@@ -25,20 +25,39 @@
 		line-height: 17px;
 	}
 	&__soc {
-
+		display: flex;
+		justify-content: space-between;
+		width: 142px;
+		a {
+			filter: grayscale(100%);
+		}
+	}
+	&__copy {
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 22px;
+		color: #EBEBEB;
 	}
 }
 .soc {
-	display: flex;
-	justify-content: space-between;
 	a {
 		display: block;
 		background-size: contain;
 		background-repeat: no-repeat;
 		width: 30px;
 		height: 30px;
+		transition: 0.2s ease;
+		&:hover {
+			filter: grayscale(0);
+		}
 	}
 	&__telegram {
 		background-image: url(static/telegram.png);
+	}
+	&__viber {
+		background-image: url(static/viber.png);
+	}
+	&__whatsapp {
+		background-image: url(static/whatsapp.png);
 	}
 }
