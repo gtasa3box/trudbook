@@ -1,0 +1,28 @@
+.b1c-submit{
+	background-image: linear-gradient(94.15deg, #FA6F5D, #DF523F, #DF523F, #FA6F5D) !important;
+	background-size: 300% 100% !important;
+	color: white !important;
+	transition: all .4s ease;
+	box-shadow: 0px 0px 15px 5px rgb(229 89 70 / 20%) !important;
+	border-radius: 0px !important;
+	text-transform: uppercase !important;
+	padding: 19px 19px !important;
+	font-weight: 600 !important;
+	font-size: 18px !important;
+	line-height: 22px !important;
+	margin: 10px auto !important;
+}
+.b1c-form * {
+	font-family: 'Montserrat', sans-serif !important; 
+}
+.b1c-submit:hover {
+	background-position: 150% 0 !important;
+}
+.b1c-tl {
+	background: #18324C !important;
+	text-transform: uppercase !important;
+}
+.b1c-cr * {
+	color: #f2f2f2 !important;
+	pointer-events: none !important;
+}
