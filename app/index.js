@@ -107,6 +107,10 @@ function toogleclass(click_burger) {
 })();
 /* end begin Back to Top button  */
 
+jQuery(function($){
+	$("#InputTel1").mask("+7 (999) 999-99-99");
+	console.log($("input[data-bme='Ваше имя']"))
+	});
 
 
 

@@ -91,6 +91,9 @@
 			@media screen and (max-width: 550px) {
 				width: 100%;
 			}
+			span {
+				pointer-events: none;
+			}
 		}
 		.button_second {
 			background-color: #E7E7E7;
@@ -102,6 +105,9 @@
 			}
 			@media screen and (max-width: 550px) {
 				width: 100%;
+			}
+			span {
+				pointer-events: none;
 			}
 			&:hover {
 				background-color: #4E4E4E;
