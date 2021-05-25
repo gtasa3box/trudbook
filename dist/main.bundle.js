@@ -112,10 +112,6 @@ function toogleclass(click_burger) {
 /* end begin Back to Top button  */
 
 
-jQuery(function ($) {
-  $("#InputTel1").mask("+7 (999) 999-99-99");
-  console.log($("input[data-bme='Ваше имя']"));
-});
 console.log('Boilerplate is working!');
 
 /***/ }),
@@ -386,7 +382,7 @@ module.exports = function (urlString) {
 // extracted by mini-css-extract-plugin
 
     if(true) {
-      // 1621955173653
+      // 1621956344040
       var cssReload = __webpack_require__(783)(module.id, {"locals":false});
       module.hot.dispose(cssReload);
       module.hot.accept(undefined, cssReload);
@@ -458,7 +454,7 @@ module.exports = function (urlString) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => "8a2e133e458d785804b3"
+/******/ 		__webpack_require__.h = () => "59b72b70852b7d8ff3b9"
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */

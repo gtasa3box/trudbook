@@ -1,0 +1,32 @@
+//проверяем, существуют ли переменные в массиве POST
+					if(!isset($_POST['tel'])){
+						?> <form action="index.php" method="post">
+							<div class="form-group mt-3">
+								<input type="tel" name="tel" class="form-control" id="InputTel1" aria-describedby="telHelp" placeholder="+79998887766" required>
+							</div>
+							<button type="submit" value="Отправить" class="btn btn-primary float-right">Оставить заявку</button>
+							</form>
+							<?php
+						} else {
+ //показываем форму
+							$tel = $_POST['tel'];
+							$tel = htmlspecialchars($tel);
+							$tel = urldecode($tel);
+							$tel = trim($tel);
+							if (mail("etalon.safe@ya.ru", "Заявка с сайта", "ФИО:".$tel.". E-mail: ".$email ,"From: example2@mail.ru \r\n")){
+								echo "Сообщение успешно отправлено";
+							} else {
+								echo "При отправке сообщения возникли ошибки";
+							}
+						}
+						?> 
+
+//кнопку оборачиваем так 
+<div class="b1c-good">
+	<div class="b1c-name">Полимеры</div>
+	<a href="#!" class="btn btn-primary b1c">Купить</a>
+</div>
+
+
+
+

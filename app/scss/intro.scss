@@ -40,6 +40,9 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	span {
+		pointer-events: none;
+	}
 	&_tringle {
 		&:after {
 			content: '';
