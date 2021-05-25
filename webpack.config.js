@@ -17,6 +17,9 @@ module.exports = {
     filename: '[name].bundle.js',
     publicPath: ''
   },
+    optimization: {
+          minimize: false,
+      },
 
   devServer: {
     static: [
@@ -25,7 +28,7 @@ module.exports = {
         watch: true,
       }
     ],
-    port: 3090,
+    port: 3099,
   },
 
   module: {
@@ -48,7 +51,7 @@ module.exports = {
         ]
       },
        {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(png|jpe?g|gif|svg)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -59,7 +62,10 @@ module.exports = {
   },
 
   plugins: [
-    new HtmlWebpackPlugin({template: './app/index.html'}),
+    new HtmlWebpackPlugin({
+      template: './app/index.html',
+      minify: false
+    }),
     new webpack.HotModuleReplacementPlugin(),
     new MiniCssExtractPlugin({
       // Options similar to the same options in webpackOptions.output
