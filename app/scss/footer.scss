@@ -177,6 +177,10 @@
 	cursor: pointer;
 	border-radius: 2px;
 	display: none;
+	@media screen and (max-width: 1800px) {
+		bottom: 100px;
+		right: 20px;
+	}
 }
 
 .back_to_top:hover {
