@@ -40,6 +40,7 @@
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	cursor: pointer;
 	span {
 		pointer-events: none;
 	}
@@ -73,13 +74,7 @@
 		}
 	}
 }
-/*buyme*/
-.b1c-form {
-	font-family: 'Montserrat', sans-serif;
-}
-.b1c-name {
-	display: none;
-}
+
 /*Intro block*/
 .intro {
 	background: linear-gradient(283.31deg, #F0F0F0 13.22%, rgba(223, 223, 223, 0) 75.68%);
@@ -106,7 +101,7 @@
 			padding: 0;
 		}
 		@media screen and (max-width: 510px) {
-			
+			transform: scale(1);
 		}
 	}
 	&__jpg {
@@ -180,7 +175,7 @@
 		@media screen and (max-width: 510px) {
 			font-size: 14px;
 			line-height: 18px;
-			padding: 14px 0;
+			
 		}
 	}
 }

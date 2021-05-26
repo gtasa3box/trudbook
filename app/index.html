@@ -93,7 +93,7 @@
 				<div class="slider">
 					<div class="wrapper-slider__card">
 						<div class="slider__card card">
-							<a data-fancybox="gallery" href="static/imgcard1.jpg"><img src="static/imgcard1.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="static/imgcard1.jpg"><img src="static/imgcard1prev.jpg" alt=""></a>
 							<div class="card__info">
 								<div class="card__title">Ящики полного выдвижения</div>
 								<div class="card__text">Удобное устройство ящиков позволяет Вам с комфортом использовать их</div>
@@ -102,7 +102,7 @@
 					</div>
 					<div class="wrapper-slider__card">
 						<div class="slider__card card">
-							<a data-fancybox="gallery" href="static/imgcard2.jpg"><img src="static/imgcard2.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="static/imgcard2.jpg"><img src="static/imgcard2prev.jpg" alt=""></a>
 							<div class="card__info">
 								<div class="card__title">Под все форматы</div>
 								<div class="card__text">Трудовых книжек: старого и нового образца</div>
@@ -111,7 +111,7 @@
 					</div>
 					<div class="wrapper-slider__card">
 						<div class="slider__card card">
-							<a data-fancybox="gallery" href="static/imgcard3.jpg"><img src="static/imgcard3.jpg" alt=""></a>
+							<a data-fancybox="gallery" href="static/imgcard3.jpg"><img src="static/imgcard3prev.jpg" alt=""></a>
 							<div class="card__info">
 								<div class="card__title">Удобные вкладыши</div>
 								<div class="card__text">Решают проблему упорядоченного размещения</div>
@@ -120,7 +120,7 @@
 					</div>
 					<div class="wrapper-slider__card">
 						<div class="slider__card card">
-							<a data-fancybox="gallery" href="static/imgcard2.jpg"><img src="static/imgcard4.png" alt=""></a>
+							<a data-fancybox="gallery" href="static/imgcard4.jpg"><img src="static/imgcard4prev.jpg" alt=""></a>
 							<div class="card__info">
 								<div class="card__title">Перемещаемые полки</div>
 								<div class="card__text">Дополнительное пространство для удобного хранения</div>
@@ -543,7 +543,7 @@
 				<p>Родионова, д. 171С, оф. 309</p>
 			</div>
 			<div class="footer__politic">
-				<a href="static/politic.docx" target="blank">Политика конфиденциальности</a>
+				<a class="iframe" href="politic.html">Политика конфиденциальности</a>
 			</div>
 			<div class="footer__soc soc">
 				<a class="soc__telegram" href="https://t.me/Nick_A_Pro" target="blank"></a>
@@ -571,8 +571,21 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-TKN87LJ');</script>
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKN87LJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("a.iframe").fancybox({
+            'type' : 'iframe',  //<--missing comma here
+            'width':500,
+            'height':500  //<-- removed last comma here
+        });
+    });
+</script>
+<noscript>
+	<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKN87LJ"
+height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script src="buyme/js/maskedinput.js"></script>
+<script src="buyme/js/buyme.js"></script>
 </body>
 
 </html>

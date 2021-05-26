@@ -63,11 +63,19 @@
 		}
 	}
 }
+.slick-slide {
+	width: 30%;
+	@media screen and (max-width: 1428px) {
+		width: 25%;
+	}
+}
+.slick-slider {
+	width: 100%;
+}
 .slider {
 	width: 85%;
 	display: flex;
-	flex-basis: 511px;
-	padding: 60px 0;
+	padding-bottom: 80px;
 	@media screen and (max-width: 880px) {
 		width: 88%;
 		padding-top: 30px;
@@ -78,15 +86,23 @@
 	@media screen and (max-width: 880px) {
 		width: 80%;
 	}
+	@media screen and (max-width: 380px) {
+		width: 100%;
+	}
 }
 
 .card {
-	width: 511px;
-	height: 285px;
-	@media screen and (max-width: 1600px) {
-		width: 400px;
-		height: 223px;
+	width: 95%;
+	height: 100%;
+	@media screen and (max-width: 505px) {
+		width: 100%;
 	}
+	//width: 511px;
+	//height: 285px;
+	//@media screen and (max-width: 1600px) {
+	//	width: 400px;
+	//	height: 223px;
+	//}
 	
 	position: relative;
 	&:hover {
@@ -125,6 +141,9 @@
 		@media screen and (max-width: 1600px) {
 			height: 90px;
 		}
+		@media screen and (max-width: 1280px) {
+			padding: 5px 10px;
+		}
 		@media screen and (max-width: 600px) {
 			padding: 14px 14px;
 		}
@@ -153,6 +172,9 @@
 		}
 	}
 }
+.wrapper-slider__card {
+
+}
 .slick-prev:before {
 	content: '';
 	display: block;
@@ -163,13 +185,16 @@
 	height: 67px;
 	width: 33px;
 	position: absolute;
-	top: -20px;
+	top: -65px;
 	left: -58px;
 	@media screen and (max-width: 1200px) {
 		left: -38px;
 	}
 	@media screen and (max-width: 880px) {
 		left: -20px;
+	}
+	@media screen and (max-width: 854px) {
+		top: -50px;
 	}
 	@media screen and (max-width: 780px) {
 		display: none;
@@ -187,10 +212,13 @@
 	height: 67px;
 	width: 33px;
 	position: absolute;
-	top: -20px;
+	top: -65px;
 	left: 38px;
 	@media screen and (max-width: 1200px) {
 		left: 18px;
+	}
+	@media screen and (max-width: 854px) {
+		top: -50px;
 	}
 	@media screen and (max-width: 880px) {
 		left: 0;

@@ -9,6 +9,7 @@ $('.slider').slick({
 	slidesToScroll: 1,
 	infinite:true,
 	arrows: true,
+	autoplay: true,
 	responsive: [
 		  {
 		breakpoint: 1200,
