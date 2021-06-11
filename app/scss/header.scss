@@ -107,7 +107,7 @@ body {
 			padding-top: 20px;
 		}
 		@media screen and (min-width: 920px) {
-			display: flex;
+			display: flex !important;
 		}
 		@media screen and (max-width: 919px) {
 			display: none;

@@ -2,12 +2,25 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding-bottom: 94px;
+	&__sales-info {
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 27px;
+		padding: 100px 10px 0;
+		text-align: center;
+		span {
+			color: #DF523F;
+		}
+		@media screen and (max-width: 740px) {
+			padding-top: 30px;
+		}
+	}
 	&__wrapper {
 		padding-top: 65px;
 		display: flex;
 		justify-content: space-between;
 		width: 52%;
-		padding-bottom: 94px;
 		@media screen and (max-width: 860px) {
 			width: 80%;
 		}
@@ -71,5 +84,26 @@
 				}
 			}
 		}
+	}
+}
+.spec {
+	margin-top: 100px;
+	&__img {
+		background-image: url(static/spec.jpg);
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 900px;
+		height: 350px;
+		box-shadow: inset 0 -80px 200px -60px rgba(21, 21, 21, 1);
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+	}
+	&__button {
+		background-color: white;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 50px;
 	}
 }
